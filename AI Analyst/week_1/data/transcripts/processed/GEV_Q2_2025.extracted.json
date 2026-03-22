@@ -1,0 +1,74 @@
+{
+  "source_filename": "GEV_Q2_2025.txt",
+  "extracted_at_utc": "2026-03-22T09:00:55+00:00",
+  "company": "GE Vernova",
+  "extracted": {
+    "metadata": {
+      "company": "GE Vernova",
+      "period": "Q2 2025",
+      "date": "2025-07-23"
+    },
+    "mentions": {
+      "china": {
+        "count_estimate": 0,
+        "snippets": []
+      },
+      "competition": {
+        "count_estimate": 1,
+        "snippets": [
+          "we are now getting to a point in many of our larger businesses...where we have a solid enough lean foundation to evaluate robotics and automation in a more strategic way"
+        ]
+      },
+      "capacity": {
+        "count_estimate": 8,
+        "snippets": [
+          "we continue to work hard to ramp our production capacity at Gas Power and to meet this rising demand for services across our fleet",
+          "let's get to a 20 gigawatt run rate, which we should get to in the second half of 2026",
+          "we announced an incremental 250 jobs over the next 2 years with up to $100 million investment that will support a doubling of volume out of that factory from '25 to '28",
+          "The team is executing well on its capacity expansion plans and we continued to increase output in the second quarter",
+          "we continue to gain conviction that we can ramp up in these businesses within our existing factories with incremental investments into more both machining but also more labor",
+          "a plant that if you go back a few years ago, was 1 shift, 5 days a week, we're very quickly 6 days a week, 3 shifts"
+        ]
+      },
+      "pricing": {
+        "count_estimate": 7,
+        "snippets": [
+          "We continue to see higher turbine prices and strong demand and still expect to have at least 60 gigawatts between backlog and reservation agreements by the end of the year at better margins",
+          "Equipment margin and backlog remains healthy, reflecting higher price as well as our continued focus on disciplined underwriting",
+          "Price was positive in each segment",
+          "we're still seeing price but at a decelerating rate...we don't expect to continue to get price at the same level that we have experienced over the previous 18 months",
+          "over the last 2 years, we've seen about 9 full points of Electrification margin and backlog expansion",
+          "we are also in a price up environment in services that will materialize through our income statement in the years ahead",
+          "EBITDA margin expansion of 740 basis points to 14.6% on more profitable volume, increased productivity and favorable pricing, primarily at Grid Solutions"
+        ]
+      },
+      "backlog": {
+        "count_estimate": 12,
+        "snippets": [
+          "backlog remaining at 29 gigawatts, while growing slot reservation agreements from 21 to 25 gigawatts, building our total backlog in slot reservation agreements to 55 gigawatts from the 50 we talked about at April earnings",
+          "still expect to have at least 60 gigawatts between backlog and reservation agreements by the end of the year at better margins",
+          "Our equipment backlog grew from $45 billion to $50 billion in 2Q, up almost $7 billion in first half '25",
+          "We now maintain a total backlog of $129 billion",
+          "equipment orders continue outpacing revenue, further expanding the equipment backlog to approximately $24 billion, up more than $6 billion compared to the second quarter of 2024",
+          "We grew our equipment backlog an incremental $2 billion in 2Q '25 led by Europe with North America and Asia backlogs both sequentially increasing almost 10%",
+          "We grew our services backlog in the second quarter by approximately $1 billion",
+          "in Onshore Wind...we have directionally 45% of next year's revenue in backlog today"
+        ]
+      }
+    },
+    "key_takeaways": [
+      "GE Vernova raised full-year 2025 guidance with EBITDA margin now 8%-9% and free cash flow lifted ~$1B to $3B-$3.5B, driven by Power (14%-15% EBITDA margin) and Electrification (13%-15%) outperformance.",
+      "Gas Power demand surged with 9 GW of new equipment contracts signed in Q2, total backlog plus slot reservation agreements reaching 55 GW (targeting ≥60 GW by year-end), and aeroderivative orders spiking to 27 units vs. 1 unit a year ago.",
+      "Wind segment remains a drag (~$300M YTD losses) but is expected to approach breakeven in H2 2025; the recently signed U.S. tax bill is driving early-stage customer re-engagement in onshore wind."
+    ],
+    "risk_flags": [
+      "Tariff headwind estimated at $300M-$400M for 2025 (~1 point of EBITDA margin), with offshore wind particularly impacted; mitigation actions still in progress.",
+      "European HVDC orders weakening due to affordability challenges, with some projects canceled or delayed.",
+      "Wind segment YTD losses of ~$300M; offshore execution risk remains with Dogger Bank completion now expected through all four quarters of 2027.",
+      "Planned restructuring of $250M-$275M in costs over next 12 months introduces near-term execution and workforce risk.",
+      "Pricing momentum in Electrification decelerating; management flagged need to sustain variable cost productivity to protect margins.",
+      "Onshore Wind has only ~45% of 2026 revenue in backlog, requiring significant H2 2025 order conversion to meet 2026 targets.",
+      "Higher-than-expected stock compensation driving elevated corporate costs in 2025."
+    ]
+  }
+}

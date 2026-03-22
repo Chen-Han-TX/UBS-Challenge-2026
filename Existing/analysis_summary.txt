@@ -1,0 +1,86 @@
+
+======================================================================
+AI MODULE OUTPUT: CROSS-BORDER POWER EQUIPMENT TRADE FLOW ANALYSIS
+======================================================================
+Generated: 2026-03-16 22:30
+Module: Cross-Border Trade Flow Analyzer v1.0
+
+EXECUTIVE SUMMARY
+======================================================================
+
+1. DEAL DATABASE OVERVIEW
+   Total deals tracked:          8
+   Confirmed MW capacity:        1,490 MW
+   Pipeline MW capacity:         1,700 MW
+   Total estimated value:        USD 2,450M
+   Dongfang Electric share:      84% of total value
+
+2. KEY FINDING: HOCKEY STICK INFLECTION
+   Q1 2026 represents a structural break in Chinese gas turbine exports.
+   The 20-unit Canadian order (1,000 MW, ~USD 845M) is the largest single
+   Chinese gas turbine export deal to a developed market EVER.
+   
+   Cumulative export MW trajectory:
+   2026-Q1: 1,990 MW | 2026-Q2E: 2,290 MW | 2026-Q3E: 2,790 MW | 2026-Q4E: 3,190 MW
+
+3. EXPORT MOMENTUM SCORE
+   Latest score: 38.0/100 (vs 35.0/100 in 2024-Q3)
+   Trend: ACCELERATING — driven by geographic expansion to North America
+   and increasing deal sizes.
+
+4. GEV COMPETITION AWARENESS (EARNINGS CALL NLP)
+   China/Competition mentions per call: 4 (Q1 2024) → 22 (Q4 2025)
+   Trend: +450% increase over 2 years
+   Management confidence ratio: 4.5 → 1.6 (DECLINING)
+   
+   Interpretation: GEV management is increasingly acknowledging Chinese
+   competition while simultaneously talking up backlog. The declining
+   confidence ratio suggests the narrative is shifting.
+
+5. MARKET SHARE PROJECTION
+   Chinese OEM share of global gas turbine orders:
+   2020: 4% → 2024: 13% → 2027E: 27%
+   This mirrors the solar disruption pattern (2008-2018) but is
+   happening faster due to the acute global power shortage.
+
+======================================================================
+INVESTMENT IMPLICATIONS
+======================================================================
+
+FOR THE LONG (Dongfang Electric):
+- DEC accounts for 84% of all tracked Chinese gas turbine export value
+- The Canadian order proves DEC can compete in developed markets
+- Export revenue is NOT in consensus estimates — this is free optionality
+- Each additional 10-unit export order adds ~CNY 3B revenue at >30% margin
+
+FOR THE SHORT (GE Vernova):
+- Rising competition mentions on earnings calls signal awareness, not action
+- GEV's response has been "we have backlog" — but backlog doesn't prevent
+  market share erosion in new orders
+- The market prices GEV at 45x PE assuming zero Chinese displacement
+- Even a 2-3pp market share loss would meaningfully impact growth trajectory
+
+CONFIDENCE LEVEL: HIGH for the directional thesis
+CONFIDENCE LEVEL: MODERATE for the specific timeline (12-18 months)
+CONFIDENCE LEVEL: LOW for exact market share numbers (limited data history)
+
+======================================================================
+METHODOLOGY & LIMITATIONS
+======================================================================
+
+ADVANTAGES:
+1. Processes Chinese + English language sources simultaneously
+2. Tracks data NOT available on Bloomberg or Capital IQ
+3. Produces real-time monitoring capability
+4. Structured output feeds directly into financial models
+5. Generates deck-ready visualizations
+
+LIMITATIONS:
+1. Chinese-language announcements may be misinterpreted
+2. Private/confidential deals not captured
+3. Pipeline deals have uncertain conversion probability
+4. Historical data limited (<3 years)
+5. AI sentiment measures perception, not ground truth
+6. Cannot replace fundamental judgment on deal economics
+7. Coverage biased toward companies with public disclosure
+8. Market share estimates are approximations, not precise figures

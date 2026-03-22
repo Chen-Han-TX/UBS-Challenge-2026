@@ -1,0 +1,66 @@
+{
+  "source_filename": "GEV_Q1_2024.txt",
+  "extracted_at_utc": "2026-03-22T08:59:13+00:00",
+  "company": "GE Vernova",
+  "extracted": {
+    "metadata": {
+      "company": "GE Vernova",
+      "period": "Q1 2024",
+      "date": "2024-04-25"
+    },
+    "mentions": {
+      "china": {
+        "count_estimate": 0,
+        "snippets": []
+      },
+      "competition": {
+        "count_estimate": 1,
+        "snippets": [
+          "We remain focused on disciplined profitable growth in selected geographic areas such as North America, where our scale and strong manufacturing footprint provides advantages to our customers."
+        ]
+      },
+      "capacity": {
+        "count_estimate": 8,
+        "snippets": [
+          "interest in adding incremental gas capacity is growing. Customers are focused on how capacity additions this decade can be decarbonized in the next decade",
+          "We are accelerating our focus and our strategy working with our supply chain partners on how to potentially create incremental capacity to meet this growing demand.",
+          "we booked eight HA gas turbine orders, four more than the same quarter last year and equal to HA orders in the full-year of 2023",
+          "many of them are going to have incremental gas capacity additions",
+          "we are bullish on the capacity addition, optionality or opportunity ahead for us with our utility customers"
+        ]
+      },
+      "pricing": {
+        "count_estimate": 7,
+        "snippets": [
+          "All three segments benefited from positive price in the quarter.",
+          "EBITDA margins expanded 470 basis points year-over-year...driven by price, productivity and volume.",
+          "Electrification is the one where we have the best opportunity to challenge ourselves on both growth and margins...given this segment has the strongest demand and pricing dynamics.",
+          "Wind EBITDA margins improved 400 basis points versus the prior year from continued cost reductions and positive price.",
+          "we will remain highly selective on new orders...only going to add to that backlog with materially different economic terms...price, other terms"
+        ]
+      },
+      "backlog": {
+        "count_estimate": 7,
+        "snippets": [
+          "Orders reached $9.7 billion and were approximately 1.3x first quarter revenue further expanding our backlog to $116 billion.",
+          "Our backlog continued to grow up over $8 billion compared to Q1 '23 with healthy margins.",
+          "Equipment backlog in this segment is up $6 billion compared to the first quarter of 2023 with healthy margins.",
+          "equipment margin and backlog remained healthy.",
+          "this strong orders and backlog that's coming into electrification will be something that supports margin expansion on those higher backlogs and margin as we move out past the 2025 timeframe."
+        ]
+      }
+    },
+    "key_takeaways": [
+      "GE Vernova delivered a strong Q1 2024 debut as a public company with 5% organic revenue growth, ~470 bps EBITDA margin expansion, and backlog growing to $116B, reaffirming full-year 2024 guidance of $34B-$35B revenue and $700M-$1.1B free cash flow.",
+      "Gas Power demand is accelerating sharply—eight HA turbine orders in Q1 alone (equal to all of 2023), services orders up double-digits, and the company is actively evaluating supply chain capacity expansions to meet surging demand driven by AI/data center load growth and coal-to-gas switching.",
+      "Electrification is the fastest-growing and most favorably positioned segment, with orders at 2x+ revenue, backlog up $6B YoY, and 600 bps EBITDA margin expansion, while Wind continues its turnaround with onshore EBITDA positive for a third consecutive quarter."
+    ],
+    "risk_flags": [
+      "G&A costs increased YoY due to public company standup and costs transferred from GE corporate, with management acknowledging this is an area of concern requiring urgent action.",
+      "Free cash flow was a net outflow of $661M in Q1, driven by ~$500M working capital outflow from inventory build and GE payable settlements, requiring significant H2 acceleration to meet full-year guidance.",
+      "Offshore wind remains loss-generating and highly selective on new orders; the segment is only expected to 'approach profitability' for full-year 2024, with execution risk on existing backlog.",
+      "Onshore wind order timing remains uncertain as U.S. developers navigate permitting challenges, creating revenue visibility risk for H2 ramp.",
+      "Gas Power supply chain capacity constraints may limit ability to capture accelerating equipment demand; management flagged need to work with supply chain partners on incremental capacity."
+    ]
+  }
+}

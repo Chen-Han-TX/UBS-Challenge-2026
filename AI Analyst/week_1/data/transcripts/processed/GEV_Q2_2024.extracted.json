@@ -1,0 +1,75 @@
+{
+  "source_filename": "GEV_Q2_2024.txt",
+  "extracted_at_utc": "2026-03-22T09:00:20+00:00",
+  "company": "GE Vernova",
+  "extracted": {
+    "metadata": {
+      "company": "GE Vernova",
+      "period": "Q2 2024",
+      "date": "2024-07-24"
+    },
+    "mentions": {
+      "china": {
+        "count_estimate": 0,
+        "snippets": []
+      },
+      "competition": {
+        "count_estimate": 1,
+        "snippets": [
+          "we're pricing for the scar slots that we have. We do continue to see a healthier pricing environment for gas on orders that we'll book in 2024 into 2025"
+        ]
+      },
+      "capacity": {
+        "count_estimate": 8,
+        "snippets": [
+          "we are almost doubling capacity our Stafford facility in the UK to deliver HVDC transformers",
+          "we have clear capacity to grow into this market in Greenville. But the challenge isn't going to be the Greenville factory.",
+          "we anticipate additional 2024 CapEx at power to fulfill demand on gas orders that are already booked, and we continue to evaluate strategies to meet potential additional demand acceleration",
+          "one of the production cells increased its output of certain switchgear components by 135% from 17 per week to more than 40 per week",
+          "We do have challenges and needs to work across our supply base and supply chain to gain access to more parts think castings and forgings",
+          "single piece flow and lean lines that have given us a lot of physical capacity",
+          "we're investing into single piece flow and lean lines that have given us a lot of physical capacity"
+        ]
+      },
+      "pricing": {
+        "count_estimate": 10,
+        "snippets": [
+          "all three segments benefited from positive price again this quarter",
+          "Margin expansion was driven by productivity, price and services volume which more than offset inflationary impacts",
+          "the pricing environment has continued to get stronger versus where we ended 2023, both in Power and Electrification",
+          "on Electrification, we had talked about for overall Electrification equipment at the end of 2023, our margins and backlog had expanded 5-full points",
+          "we remain highly selective on potential offshore win new orders, focused on achieving substantially higher pricing, and disciplined commercial terms",
+          "EBITDA margins improved 400 basis points versus the prior year from positive price and continued cost reductions",
+          "pricing that's coming through on those in the early parts of this year are going to flow out into better margins in the second half of the year",
+          "we do see that over the medium to long-term as margin accretive to where the Power business segment goes"
+        ]
+      },
+      "backlog": {
+        "count_estimate": 9,
+        "snippets": [
+          "Our backlog remains sizable at $115 billion, including the impact of the recently completed divestiture of a portion of steam power to EDF",
+          "equipment margin and backlog remains healthy in line with our disciplined profitable growth priority",
+          "the Electrification segment has grown its backlog by over 25% since the start of the year",
+          "Equipment backlog in this segment increased to approximately $17 billion, up $5 billion compared to the second quarter of 2023, with healthy margins",
+          "we had expanded our margin within that backlog by about 10 full points",
+          "over 50% of that backlog doesn't start to convert to revenue until 2026",
+          "we accreted the margin and backlog about 500 basis points",
+          "we grew onshore backlog in the quarter",
+          "At offshore, we have converted almost $800 million of our backlog to revenue in the first half of the year"
+        ]
+      }
+    },
+    "key_takeaways": [
+      "GE Vernova raised full-year 2024 guidance across revenue (high end of $34B–$35B), adjusted EBITDA margin (5%–7%), and free cash flow ($1.3B–$1.7B), driven by outperformance in Power and Electrification segments.",
+      "Gas Power demand is accelerating with 30 heavy-duty gas turbines booked in H1 2024 (12 HAs), and management expects H2 2024 orders to exceed H1; supply chain investment and CapEx are being deployed to meet demand.",
+      "The Vineyard Wind blade event poses near-term offshore wind execution risk, with potential collection timing shifts from 2024 to 2025, though no engineering design flaw was identified and Dogger Bank installation continues."
+    ],
+    "risk_flags": [
+      "Vineyard Wind turbine blade manufacturing deviation requires inspection of ~150 blades; risk of revenue/collection timing slippage from 2024 into 2025.",
+      "Onshore Wind order inflection remains uncertain as customers face permitting challenges and elevated interest rates; North America recovery timing unclear.",
+      "Supply chain constraints (castings, forgings) could limit Gas Power capacity expansion despite strong order momentum.",
+      "Two employee/contractor fatalities in June 2024 highlight ongoing safety execution risks.",
+      "Offshore Wind segment remains loss-making; further blade or quality events could increase costs and delay project completions."
+    ]
+  }
+}

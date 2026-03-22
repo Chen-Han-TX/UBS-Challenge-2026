@@ -1,0 +1,71 @@
+{
+  "source_filename": "GEV_Q3_2025.txt",
+  "extracted_at_utc": "2026-03-22T09:01:55+00:00",
+  "company": "GE Vernova",
+  "extracted": {
+    "metadata": {
+      "company": "GE Vernova",
+      "period": "Q3 2025",
+      "date": "2025-10-22"
+    },
+    "mentions": {
+      "china": {
+        "count_estimate": 1,
+        "snippets": [
+          "We also sold an additional ownership stake in our China XD grid business and generated approximately $100 million of pretax proceeds."
+        ]
+      },
+      "competition": {
+        "count_estimate": 2,
+        "snippets": [
+          "aero derivatives are getting a lot more attention now, strong demand growth, a lot of competition. Maybe help us understand your plans for capacity additions in aero derivatives",
+          "economics of the larger gas turbines are just so much more economically efficient...heavy-duty gas turbines are going to carry the day"
+        ]
+      },
+      "capacity": {
+        "count_estimate": 12,
+        "snippets": [
+          "remain on track to meet the runway of 20 gigawatts annualized production by 3Q '26",
+          "increased production capacity for valve modules by approximately 40%",
+          "Prolec has already launched, completed and/or have investments to expand capacity...valued at $300 million",
+          "we also expect to incorporate our lean culture into how we operate these facilities...we are doubling output and adding jobs",
+          "we do not feel like we're capacity constrained. They are not capacity constrained to meet the numbers"
+        ]
+      },
+      "pricing": {
+        "count_estimate": 10,
+        "snippets": [
+          "slot reservation agreements are at higher price and more attractive margins, that will translate to orders in directionally in the next 12 months",
+          "Price was positive in all segments",
+          "We expect low double-digit revenue growth driven by volume and pricing",
+          "directional number of $2,500 [per KW], I think, is a practical illustration of where the market is today",
+          "we continue to see price accelerating in gas"
+        ]
+      },
+      "backlog": {
+        "count_estimate": 15,
+        "snippets": [
+          "we've grown our backlog $16 billion in '25 with $7 billion increase in our backlog in 3Q alone",
+          "our backlog expanded to $135 billion, a year-over-year and sequential increase led by both Power and Electrification",
+          "equipment backlog grew to $54 billion, up approximately $12 billion year-over-year",
+          "Electrification equipment backlog has grown by over $6 billion...now more than $26 billion",
+          "Prolec had an equipment backlog of approximately $4 billion at the end of the second quarter",
+          "gas turbine backlog grew this quarter from 29 gigawatts to 33 gigawatts and our slot reservation agreements increased from 25 gigawatts to 29 gigawatts"
+        ]
+      }
+    },
+    "key_takeaways": [
+      "GE Vernova announced acquisition of remaining 50% of Prolec GE for ~$5.275B (50% cash/50% debt), immediately accretive to EBITDA; Prolec generates $3B revenue at 25% EBITDA margins with $4B equipment backlog and is expected to grow to $4B+ revenue and $1B+ EBITDA by 2028.",
+      "Q3 2025 results were strong: orders of $14.6B (+55% YoY), total backlog of $135B, revenue +10% organic, adjusted EBITDA margins expanded 600bps, and free cash flow of ~$730M; full-year guidance reaffirmed with revenue trending toward high end of $36B-$37B range.",
+      "Gas Power momentum accelerating with 12 GW of new contracts signed in Q3, gas turbine backlog at 33 GW plus 29 GW slot reservations (62 GW total), targeting ~70 GW by year-end; Electrification revenue guidance raised to ~25% organic growth with EBITDA margin now 14%-15%."
+    ],
+    "risk_flags": [
+      "Onshore Wind revenue guidance cut to down high single digits (from down mid-single digits) due to continued softness in U.S. equipment orders; Wind EBITDA losses expected ~$400M for full year.",
+      "Tariff headwind estimated at $300M-$400M for 2025 (trending toward lower end net of mitigations), with uncertainty around future tariff policy.",
+      "Prolec integration risk: deal expected to close mid-2026, with synergy realization dependent on smooth talent retention, systems integration and operational alignment.",
+      "Gas turbine capacity constrained at 20 GW annualized run rate through 3Q 2026; management explicitly not planning capacity expansion beyond that level near-term despite surging demand.",
+      "Q4 2025 revenue may be slightly lower year-over-year due to improved gas turbine delivery linearity and continued onshore wind softness.",
+      "Corporate costs increasing year-over-year driven by higher stock-based compensation, incentives and increased AI/robotics investments."
+    ]
+  }
+}

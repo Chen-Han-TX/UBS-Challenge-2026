@@ -1,0 +1,69 @@
+{
+  "source_filename": "GEV_Q4_2025.txt",
+  "extracted_at_utc": "2026-03-22T09:03:02+00:00",
+  "company": "GE Vernova",
+  "extracted": {
+    "metadata": {
+      "company": "GE Vernova",
+      "period": "Q4 2025",
+      "date": "2026-01-28"
+    },
+    "mentions": {
+      "china": {
+        "count_estimate": 0,
+        "snippets": []
+      },
+      "competition": {
+        "count_estimate": 3,
+        "snippets": [
+          "a lot of the smaller applications are simply enabling more projects to get started because what it's enabling is earlier power that truthfully we can't provide",
+          "we don't really view those smaller units to be competition, but that doesn't mean that's not a good business in the near term",
+          "we expect to continue to have the attractive share in the market that we have had and will continue to have"
+        ]
+      },
+      "capacity": {
+        "count_estimate": 8,
+        "snippets": [
+          "we remain on track to see a substantial step-up in gas turbine output in 3Q '26. We installed over 200 new machines in our factories while adding nearly 1,000 new production workers in '25",
+          "We expect to reach approximately 100 gigawatts under contract in '26",
+          "we expect higher second half Gas Power revenue as we ship more gas turbines in the second half of the year as we increase annual production capacity to approximately 20 gigawatts starting in midyear '26",
+          "from '24 to '28, we're doubling our output with transformers and switch gears",
+          "nearly $1 billion of incremental CapEx from Prolec GE to support increased transformer production"
+        ]
+      },
+      "pricing": {
+        "count_estimate": 7,
+        "snippets": [
+          "pricing does continue to strengthen. When we look at where we're trending with our slot reservation agreements today versus our existing backlog, there's another 10 to 20 points of pricing strength in the SRAs today",
+          "Price was positive in all segments",
+          "customers continue to invest in their existing fleets...signing new long-term service agreements at favorable pricing",
+          "as the pricing is accelerating on the equipment itself, as we sign those new contracts for service orders, we'll see incremental pricing there",
+          "We also grew our Power services backlog to $70 billion...driven by strength in gas with customers...signing new long-term service agreements at favorable pricing"
+        ]
+      },
+      "backlog": {
+        "count_estimate": 12,
+        "snippets": [
+          "we increased our total backlog by over 25% or $31 billion to $150 billion with robust profitable order growth in Power and Electrification",
+          "Gas Power equipment backlog and slot reservations increased from 62 to 83 gigawatts sequentially",
+          "We ended '25 with $64 billion in equipment backlog, an increase of approximately 50% year-over-year with an incremental 6 points in equipment margin expansion",
+          "In Electrification, customers...grew the segment's total backlog to $35 billion, up $4 billion sequentially and $11 billion year-over-year",
+          "we expect to add at least as much equipment margin dollars in backlog in '26 as in '25...at least $8 billion this year"
+        ]
+      }
+    },
+    "key_takeaways": [
+      "GE Vernova delivered record Q4 2025 orders of $22.2B (up 65% YoY), growing total backlog to $150B and adding $8B in equipment backlog margin dollars in 2025, with gas turbine pricing in SRAs running 10-20 points above existing backlog.",
+      "Full year 2026 guidance raised to $44B-$45B revenue and $5B-$5.5B free cash flow, incorporating the Prolec GE acquisition (closing Feb 2), with Power EBITDA margins guided to 16%-18% and Electrification to 17%-19%.",
+      "Wind segment losses exceeded expectations at ~$600M (vs. ~$400M guided) due to the U.S. government's December 22 offshore wind stop-work order impacting Vineyard Wind; 2026 Wind EBITDA losses expected at ~$400M with significant H2 weighting."
+    ],
+    "risk_flags": [
+      "U.S. government stop-work order on offshore wind (Dec 22) caused incremental Vineyard Wind contract loss accruals; if remaining 11 turbines cannot be installed by end of March, ~$250M revenue impact in 2026.",
+      "U.S. onshore wind order softness persists due to permitting delays and tariff uncertainty, with ~$70M tariff headwind in Q1 2026 Wind EBITDA.",
+      "Wind EBITDA losses of $300M-$400M expected in Q1 2026 alone, with H1 profitability significantly impaired by lower volume and tariff exposure on pre-tariff contracts.",
+      "Gas turbine capacity ramp heavily back-half weighted; production capacity of ~20 GW not reached until mid-2026, creating execution risk if demand accelerates faster than supply.",
+      "Prolec GE acquisition adds ~$2.6B of debt; while gross debt/EBITDA remains below 1x, integration execution risk exists across 5 large acquired factories.",
+      "Higher-margin gas and grid equipment orders placed in 2024-2025 will not be delivered until 2027 and beyond, creating a multi-year lag before backlog margin improvement flows to P&L."
+    ]
+  }
+}

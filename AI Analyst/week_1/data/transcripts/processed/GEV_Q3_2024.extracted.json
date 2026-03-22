@@ -1,0 +1,67 @@
+{
+  "source_filename": "GEV_Q3_2024.txt",
+  "extracted_at_utc": "2026-03-22T09:01:23+00:00",
+  "company": "GE Vernova",
+  "extracted": {
+    "metadata": {
+      "company": "GE Vernova",
+      "period": "Q3 2024",
+      "date": "2024-10-23"
+    },
+    "mentions": {
+      "china": {
+        "count_estimate": 0,
+        "snippets": []
+      },
+      "competition": {
+        "count_estimate": 2,
+        "snippets": [
+          "there's going to be multiple small modular reactor technologies that are going to be part of the equation",
+          "It would be a lot harder for us to meet this growing demand if we were doing with greenfield operations. That's not what's happening here."
+        ]
+      },
+      "capacity": {
+        "count_estimate": 12,
+        "snippets": [
+          "we have now secured capacity to deliver between 70 to 80 heavy-duty gas turbines per year starting in 2026, up from 55 in recent years",
+          "we will double the capacity of the manufacturing output of this business, with 75% of the expansion coming from core lean improvements",
+          "we're funding capacity expansion from customer orders and related down payments to enable delivery of 70 to 80 heavy-duty gas turbines annually starting in 2026",
+          "the onshore wind team have been working really hard to take cost out of that business...they've resized the business to be profitable at about 1,000 turbines a year",
+          "do you have the capacity to support the demand in electrification?...we have a high degree of confidence that we're going to double the capacity of that business"
+        ]
+      },
+      "pricing": {
+        "count_estimate": 8,
+        "snippets": [
+          "price remained positive across all 3 segments",
+          "We are seeing substantially better pricing environment today than what we're getting in orders today relative to what we're shipping in revenue today",
+          "we are continuing to see price in today's environment. So we don't feel like we've topped out there",
+          "in onshore wind, as an example, that's really levelled off, we're not there today in electrification",
+          "Electrification realized nearly 700 basis points of margin expansion...on strong volume with continued price and productivity"
+        ]
+      },
+      "backlog": {
+        "count_estimate": 10,
+        "snippets": [
+          "Our backlog of $118 billion grew both year-over-year and sequentially and equipment margin and backlog remains healthy",
+          "we are on track to more than triple this backlog by year-end '24 from year-end '22 levels of just over $6 billion",
+          "Equipment orders are outpacing revenue, further expanding the equipment backlog to approximately $19 billion, up almost $6 billion compared to the third quarter of 2023",
+          "we're focused on improving execution and delivering on the approximately $3 billion backlog in the safest, highest quality delivery model",
+          "onshore wind backlog that had about 10 incremental points of margin in that backlog"
+        ]
+      }
+    },
+    "key_takeaways": [
+      "Power segment delivered 34% order growth with 9 HA units booked in Q3 alone (exceeding all of 2023), and capacity is being expanded to 70-80 heavy-duty gas turbines/year by 2026; 2025 orders expected to match or exceed 2024 levels with a stronger North America/hyperscaler mix.",
+      "Electrification achieved double-digit EBITDA margins for the first time with ~700 bps expansion, backlog growing to ~$19B (+$6B YoY), and capacity being doubled largely through lean/asset utilization improvements rather than greenfield CapEx.",
+      "Offshore wind remains a significant headwind with a ~$700M charge in Q3 due to blade manufacturing deviations and project delays; the ~$3B remaining backlog burn-down timeline has shifted right, and GEV does not plan to add new offshore backlog without substantially different economics."
+    ],
+    "risk_flags": [
+      "Offshore wind blade manufacturing defect (Canada factory) affected a low-single-digit proportion of all manufactured blades; remediation costs and project delays (Vineyard Wind, Dogger Bank) drove ~$700M in additional contract losses in Q3.",
+      "Offshore wind backlog completion timeline has moved beyond the previously guided end-2025 target, with updated burn-down schedule to be provided at December 10 Analyst Day.",
+      "Onshore wind order inflection in North America remains uncertain; interconnection queue congestion is delaying a return to mid-teens gigawatt annual commissioning levels.",
+      "Fatality reported at an onshore wind site in Sweden, highlighting ongoing safety execution risks.",
+      "Q4 free cash flow expected to be lower year-over-year due to improved linearity, lower SunZia-type down payments, higher taxes from EBITDA growth, and elevated CapEx for capacity expansion."
+    ]
+  }
+}
