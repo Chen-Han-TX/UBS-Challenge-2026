@@ -1,0 +1,9 @@
+period,call_date,china_count_est,competition_count_est,capacity_count_est,pricing_count_est,backlog_count_est,china_snippets_n,competition_snippets_n,capacity_snippets_n,pricing_snippets_n,backlog_snippets_n,source_file,extracted_at_utc
+Q1 2024,2024-04-25,0,1,8,7,7,0,1,5,5,5,GEV_Q1_2024.txt,2026-03-22T08:59:13+00:00
+Q2 2024,2024-07-24,0,1,8,10,9,0,1,7,8,9,GEV_Q2_2024.txt,2026-03-22T09:00:20+00:00
+Q3 2024,2024-10-23,0,2,12,8,10,0,2,5,5,5,GEV_Q3_2024.txt,2026-03-22T09:01:23+00:00
+Q4 2024,2025-01-22,2,2,8,10,12,2,2,6,6,6,GEV_Q4_2024.txt,2026-03-22T09:02:25+00:00
+Q1 2025,2025-04-23,6,1,6,8,12,6,1,6,8,7,GEV_Q1_2025.txt,2026-03-22T08:59:46+00:00
+Q2 2025,2025-07-23,0,1,8,7,12,0,1,6,7,8,GEV_Q2_2025.txt,2026-03-22T09:00:55+00:00
+Q3 2025,2025-10-22,1,2,12,10,15,1,2,5,5,6,GEV_Q3_2025.txt,2026-03-22T09:01:55+00:00
+Q4 2025,2026-01-28,0,3,8,7,12,0,3,5,5,5,GEV_Q4_2025.txt,2026-03-22T09:03:02+00:00
