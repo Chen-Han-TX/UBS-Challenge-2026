@@ -95,3 +95,45 @@
 - **Relevant to thesis**: competition, capacity
 - **Quote snippet (Chinese)**: G50重型燃气轮机的热端第一第二级叶片是东方电气自主研制。
 - **Your translation (English)**: The first- and second-stage hot-end blades of the G50 heavy-duty gas turbine are independently developed by DEC.
+
+---
+
+## Article 8
+
+- **Title**: Dongfang Electric's share price rose after securing a core equipment order for a 50 MW combined-cycle power generation project in the Zhambyl region of Kazakhstan
+- **Publisher**: Zhitong Finance (via Futunn)
+- **Date**: 2025-12-12
+- **URL**: https://news.futunn.com/en/post/66105604/dongfang-electric-s-share-price-rose-after-securing-a-core
+- **Company**: DEC
+- **Key claim (1 sentence)**: DEC's self-developed G50 secured a core-equipment order in Kazakhstan and was described as China's first complete-unit heavy-duty gas turbine export.
+- **Relevant to thesis**: exports, capacity
+- **Quote snippet (Chinese)**: 东方电气自主研制F级重型燃机G50成功“出海”，斩获哈萨克斯坦江布尔州50兆瓦联合循环发电项目核心设备订单。
+- **Your translation (English)**: DEC's self-developed F-class G50 heavy-duty gas turbine successfully went overseas and won the core-equipment order for a 50MW combined-cycle project in Kazakhstan's Zhambyl region.
+
+---
+
+## Article 9
+
+- **Title**: Dongfang Electric (600875): Bullish about autonomous gas turbines going overseas to contribute to profit elasticity
+- **Publisher**: Huatai Securities (via Futunn)
+- **Date**: 2025-11-15
+- **URL**: https://news.futunn.com/en/post/64982954/dongfang-electric-600875-positive-outlook-on-the-profit-elasticity-contributed
+- **Company**: DEC
+- **Key claim (1 sentence)**: Huatai says DEC's self-developed G50 has achieved commercial operation and overseas progress, with export orders landing in Central Asia and the Middle East.
+- **Relevant to thesis**: exports, capacity, backlog
+- **Quote snippet (Chinese)**: 目前公司燃机出口订单已落地中东和中亚（哈萨克斯坦）。
+- **Your translation (English)**: At present, the company's gas-turbine export orders have landed in the Middle East and Central Asia (Kazakhstan).
+
+---
+
+## Article 10
+
+- **Title**: 东方电气(600875)：饱满订单支撑成长 燃机出海迎来机遇
+- **Publisher**: 华鑫证券（via 富途牛牛）
+- **Date**: 2025-12-19
+- **URL**: https://news.futunn.com/post/66418877/dongfang-electric-600875-robust-order-book-supports-growth-gas-turbine
+- **Company**: DEC
+- **Key claim (1 sentence)**: Huaxin argues Western OEM bottlenecks and AI-driven power demand create an export window, and reiterates DEC's Kazakhstan G50 project win.
+- **Relevant to thesis**: exports, capacity, competition
+- **Quote snippet (Chinese)**: 公司凭借自主研制的F级重型燃气轮机G50成功实现海外突破，已获取哈萨克斯坦江布尔州50兆瓦联合循环发电项目核心设备订单。
+- **Your translation (English)**: Leveraging its self-developed F-class G50 heavy-duty gas turbine, DEC has achieved an overseas breakthrough and secured the core-equipment order for Kazakhstan's Zhambyl 50MW combined-cycle project.

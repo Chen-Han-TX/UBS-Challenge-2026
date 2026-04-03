@@ -1,0 +1,10 @@
+date,chinese_oem,buyer,country,region,product,units,mw_per_unit,total_mw,est_value_usd_m,status,source,notes
+2024-Q3,Shanghai Electric,Pakistan CPEC Consortium,Pakistan,South Asia,F-class Gas Turbine (Siemens licensed),2,250,500,200,In Progress,Shanghai Electric HKEx Filing,"Licensed technology, not indigenous"
+2025-Q1,Dongfang Electric,Kazakhstan Utility,Kazakhstan,Central Asia,"G50 Gas Turbine (50MW, indigenous)",3,50,150,127,Delivered,"Dongwu Securities Research, Jan 2026",First indigenous gas turbine export; >30% gross margin
+2025-Q3,Harbin Electric,Bangladesh Power Development Board,Bangladesh,South Asia,E-class Gas Turbine (60MW),4,60,240,180,Contract Signed,Harbin Electric Announcement,Competitive bid; BRI-linked financing
+2025-Q4,Dongfang Electric,Uzbekistan State Power,Uzbekistan,Central Asia,G50 Gas Turbine (50MW),2,50,100,85,Contract Signed,DEC Investor Presentation,Repeat region after Kazakhstan success
+2026-Q1,Dongfang Electric,Canadian Utility Client,Canada,North America,G50 Gas Turbine (50MW),20,50,1000,845,Confirmed,"Futunn/CSC Financial, March 2026",MILESTONE: First China-made gas turbine to North America
+2026-Q2E,Dongfang Electric,Vietnam EVN,Vietnam,Southeast Asia,G50 Gas Turbine (50MW),6,50,300,253,Negotiating,Industry intelligence,Vietnam power shortage; DEC has existing hydro relationship
+2026-Q3E,Dongfang Electric,Saudi NEOM / Data Center SPV,Saudi Arabia,Middle East,G50 Gas Turbine (50MW),10,50,500,422,Early Stage,Industry intelligence,AIDC buildout in GCC; price-sensitive procurement
+2026-Q4E,Dongfang Electric,US Data Center Developer,United States,North America,G50 Gas Turbine (50MW),8,50,400,338,Exploratory,AI module inference — US power gap analysis,Speculative: US shortage may override tariff barriers
+2025-Q4,Dongfang Electric,Undisclosed Middle East Counterparty,Undisclosed,Middle East,"G50 Gas Turbine (50MW, self-developed)",0,50,0,0,Mentioned (size not disclosed),"Huatai Securities summary (Futunn), 2025-11-15","Source indicates Middle East export orders landed, but no project size disclosed."
