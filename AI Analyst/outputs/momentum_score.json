@@ -1,0 +1,20 @@
+{
+  "composite_score": 68.7,
+  "sub_scores": {
+    "deal_flow": 57.2,
+    "incumbent_anxiety": 56.2,
+    "order_conversion": 62.5,
+    "geographic_diversification": 100.0,
+    "technology_validation": 100
+  },
+  "weights": {
+    "deal_flow": 0.3,
+    "incumbent_anxiety": 0.25,
+    "order_conversion": 0.2,
+    "geographic_diversification": 0.15,
+    "technology_validation": 0.1
+  },
+  "computed_at": "2026-04-04T15:54:48.609689",
+  "deal_count": 8,
+  "transcript_quarters": 8
+}
