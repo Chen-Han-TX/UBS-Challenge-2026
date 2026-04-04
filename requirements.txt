@@ -1,0 +1,10 @@
+# UBS Finance Challenge — Python dependencies (AI Trade Flow Analyzer)
+# Install from repo root:
+#   pip install -r requirements.txt
+#
+# Primary module: AI Analyst/ai_trade_flow_analyzer.py
+
+anthropic>=0.40.0
+matplotlib>=3.8.0
+numpy>=1.24.0
+python-dotenv>=1.0.0

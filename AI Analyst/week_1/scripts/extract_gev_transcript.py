@@ -2,10 +2,18 @@ import argparse
 import json
 import os
 import re
+import sys
 from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Sequence
+
+_AI_ANALYST_ROOT = Path(__file__).resolve().parents[2]
+if str(_AI_ANALYST_ROOT) not in sys.path:
+    sys.path.insert(0, str(_AI_ANALYST_ROOT))
+import env_bootstrap  # noqa: E402
+
+env_bootstrap.load_dotenv_if_present()
 
 import anthropic
 
@@ -209,7 +217,7 @@ def main() -> int:
     api_key = os.environ.get("ANTHROPIC_API_KEY")
     if not api_key:
         raise SystemExit(
-            "Missing ANTHROPIC_API_KEY. Set it in your shell, e.g.:\n"
+            "Missing ANTHROPIC_API_KEY. Create AI Analyst/.env (see .env.example) or run:\n"
             "export ANTHROPIC_API_KEY=\"...\""
         )
 

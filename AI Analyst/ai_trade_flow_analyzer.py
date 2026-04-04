@@ -10,13 +10,14 @@ A functioning Python pipeline that:
   D. Generates deck-ready charts (Slide 6 hockey stick, market share, GEV NLP, pipeline, score) + Bible filenames
 
 Usage:
-  # Full pipeline (requires ANTHROPIC_API_KEY for extraction):
+  # Full pipeline: NLP extraction saves merged CSV artifact only; score & charts
+  # use the curated deal database unless you pass --include-extractions-in-score.
   python ai_trade_flow_analyzer.py --full
 
   # Charts + score only (no API key needed, uses pre-processed data):
   python ai_trade_flow_analyzer.py --charts-only
 
-  # Extract deals from Chinese news (requires API key):
+  # Extract deals from Chinese news (requires API key); same scoring rule as --full.
   python ai_trade_flow_analyzer.py --extract-news
 
   # Extract from GEV transcript (requires API key):
@@ -36,6 +37,10 @@ import argparse
 import math
 from datetime import datetime
 from pathlib import Path
+
+import env_bootstrap
+
+env_bootstrap.load_dotenv_if_present()
 
 # ---------------------------------------------------------------------------
 # CONFIGURATION
@@ -186,7 +191,15 @@ def build_quarterly_export_mw_series(deals: list[dict]) -> list[dict]:
     return out
 
 
-def extract_deals_from_chinese_text(text: str, source_url: str = "") -> list[dict]:
+def _safe_deal_id_slug(name: str) -> str:
+    """ASCII slug from a news filename stem for unique EXT_* deal_ids."""
+    s = re.sub(r"[^A-Za-z0-9]+", "_", (name or "news").strip()).strip("_") or "news"
+    return s[:48]
+
+
+def extract_deals_from_chinese_text(
+    text: str, source_url: str = "", source_file_slug: str = ""
+) -> list[dict]:
     """
     Use Claude API to extract structured deal data from Chinese-language text.
     Returns a list of deal dicts matching the database schema.
@@ -199,7 +212,7 @@ def extract_deals_from_chinese_text(text: str, source_url: str = "") -> list[dic
 
     api_key = os.environ.get("ANTHROPIC_API_KEY")
     if not api_key:
-        print("  [ERROR] ANTHROPIC_API_KEY not set. Set it with:")
+        print("  [ERROR] ANTHROPIC_API_KEY not set. Add it to AI Analyst/.env or run:")
         print("          export ANTHROPIC_API_KEY='your-key-here'")
         return []
 
@@ -252,10 +265,12 @@ Return ONLY valid JSON — an array of objects. No markdown, no explanation."""
         if not isinstance(deals, list):
             deals = [deals]
 
-        # Add source and deal_id
+        slug = _safe_deal_id_slug(source_file_slug)
+        day = datetime.now().strftime("%Y%m%d")
+        # Per-file index + source stem avoids duplicate EXT_* ids across articles.
         for i, deal in enumerate(deals):
             deal["source"] = source_url or "Chinese news extraction (Claude API)"
-            deal["deal_id"] = f"EXT_{datetime.now().strftime('%Y%m%d')}_{i+1:03d}"
+            deal["deal_id"] = f"EXT_{slug}_{i + 1:03d}_{day}"
 
         print(f"  [OK] Extracted {len(deals)} deals from text")
         return deals
@@ -293,7 +308,9 @@ def process_all_news_files() -> list[dict]:
                 source_url = line.split(":", 1)[1].strip()
                 break
 
-        deals = extract_deals_from_chinese_text(text, source_url)
+        deals = extract_deals_from_chinese_text(
+            text, source_url, source_file_slug=fpath.stem
+        )
         all_deals.extend(deals)
 
     return all_deals
@@ -389,7 +406,7 @@ def extract_transcript_mentions(transcript_text: str, quarter: str) -> dict:
 
     api_key = os.environ.get("ANTHROPIC_API_KEY")
     if not api_key:
-        print("  [ERROR] ANTHROPIC_API_KEY not set")
+        print("  [ERROR] ANTHROPIC_API_KEY not set (use AI Analyst/.env or export)")
         return {}
 
     client = anthropic.Anthropic(api_key=api_key)
@@ -688,7 +705,7 @@ def generate_all_charts(deals: list[dict], transcript_data: list[dict],
         if "2026-Q1" in quarters_hs:
             idx_ca = quarters_hs.index("2026-Q1")
             ax2.annotate(
-                "Milestone:\nCanada 20×50MW\n(1,000 MW)",
+                "Milestone:\nCanada 20×50MW (1,000 MW)\nRMB 4B @ 200M/unit",
                 xy=(idx_ca, cum_mw[idx_ca]),
                 xytext=(max(0, idx_ca - 1.2), cum_mw[idx_ca] + max(cum_mw) * 0.12),
                 fontsize=9, fontweight="bold", color="#E74C3C",
@@ -1030,6 +1047,12 @@ def main():
                         help="Extract mentions from a transcript file (needs API key)")
     parser.add_argument("--score-only", action="store_true",
                         help="Compute momentum score from existing data")
+    parser.add_argument(
+        "--include-extractions-in-score",
+        action="store_true",
+        help="After news extraction, merge NLP rows into deals used for score/charts "
+        "(default: curated CSV only; raw merge is still saved to api_extraction_raw_output.csv)",
+    )
     args = parser.parse_args()
 
     # Default to --charts-only if no flags
@@ -1043,20 +1066,36 @@ def main():
     print("  UBS Finance Challenge 2026")
     print("=" * 65)
 
-    # Step 1: Load deal database
+    # Step 1: Load deal database (canonical ground truth for score/charts by default)
     print("\n[STEP 1] Loading deal database...")
-    deals = load_deal_database()
+    deals_curated = load_deal_database()
+    deals_for_score = list(deals_curated)
 
-    # Step 2: Extract from news (if requested)
+    # Step 2: Extract from news (if requested) — saves merged artifact; does not
+    # inflate the headline score unless --include-extractions-in-score.
     if args.full or args.extract_news:
         print("\n[STEP 2] Extracting deals from Chinese news...")
         new_deals = process_all_news_files()
         if new_deals:
-            base_len = len(deals)
-            for i, nd in enumerate(new_deals):
-                deals.append(_normalize_loaded_deal(nd, base_len + i))
-            output_path = OUTPUT_DIR / "export_deal_database_updated.csv"
-            save_deals_to_csv(deals, output_path)
+            base_len = len(deals_curated)
+            normalized_new = [
+                _normalize_loaded_deal(nd, base_len + i)
+                for i, nd in enumerate(new_deals)
+            ]
+            merged = list(deals_curated) + normalized_new
+            output_path = OUTPUT_DIR / "api_extraction_raw_output.csv"
+            save_deals_to_csv(merged, output_path)
+            print(
+                "  [NOTE] Score & charts use curated deals only (see data/deals/export_deal_database.csv)."
+            )
+            print(
+                "         Raw NLP + curated merge is in api_extraction_raw_output.csv (appendix / QC)."
+            )
+            if args.include_extractions_in_score:
+                deals_for_score = merged
+                print(
+                    "  [WARN] --include-extractions-in-score: composite may double-count vs Excel SOTP."
+                )
     else:
         print("\n[STEP 2] Skipping news extraction (use --extract-news)")
 
@@ -1084,7 +1123,7 @@ def main():
 
     # Step 5: Compute momentum score
     print("\n[STEP 5] Computing China Export Momentum Score...")
-    score_result = compute_momentum_score(deals, transcript_data)
+    score_result = compute_momentum_score(deals_for_score, transcript_data)
 
     # Save score
     score_path = OUTPUT_DIR / "momentum_score.json"
@@ -1095,14 +1134,14 @@ def main():
     # Step 6: Generate charts
     if args.full or args.charts_only:
         print("\n[STEP 6] Generating charts...")
-        generate_all_charts(deals, transcript_data, score_result)
+        generate_all_charts(deals_for_score, transcript_data, score_result)
     else:
         print("\n[STEP 6] Skipping charts (use --charts-only)")
 
     # Summary
     print("\n" + "=" * 65)
     print("  PIPELINE COMPLETE")
-    print(f"  Deals in database:    {len(deals)}")
+    print(f"  Deals in score/charts: {len(deals_for_score)}")
     print(f"  Transcript quarters:  {len(transcript_data)}")
     print(f"  Momentum Score:       {score_result['composite_score']:.1f} / 100")
     print(f"  Charts generated in:  {CHART_DIR}/")

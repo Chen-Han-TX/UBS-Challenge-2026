@@ -18,11 +18,13 @@ python3 ai_trade_flow_analyzer.py --charts-only
 | `../outputs/charts/chart1_gev_competition_mentions.png` … `chart4_momentum_score.png` | Same as Bible aliases; optional duplicate |
 | `../outputs/momentum_score.json` | Exact composite + sub-scores for Slide 18 |
 | `../outputs/chart_manifest.json` | Inventory + timestamp |
+| `../outputs/api_extraction_raw_output.csv` | Optional: after `python3 ai_trade_flow_analyzer.py --full` — raw NLP merge (curated + extracted); requires human dedup before model use; headline score uses curated CSV only |
 | `../ai_trade_flow_analyzer.py` | Source code |
 | `../data/transcripts/gev_mentions_by_quarter.csv` | Transcript aggregate input |
-| `../data/deals/export_deal_database.csv` | Deal database input |
+| `../data/deals/export_deal_database.csv` | Deal database input (Canada row = RMB 4B @ 200M/unit, USD field = 4B/7.2 for chart CNY) |
 | `../week_1/data/transcripts/processed/GEV_Q1_2024.extracted.json` (any one quarter) | Sample Claude structured output |
 | `../docs/AI_MODULE_METHODOLOGY.md` | Methodology + advantages + limitations |
+| `../docs/AI_MODULE_SUBMISSION_SUMMARY.md` | Current pipeline behavior, headline score rules, deck vs appendix |
 
 ## Optional
 

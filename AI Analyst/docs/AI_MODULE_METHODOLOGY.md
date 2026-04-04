@@ -12,7 +12,17 @@ All inputs for the main pipeline live under **`AI Analyst/data/`** (not scattere
 | `data/deals/export_deal_database.csv` | Team deal table (same schema as `Existing/export_deal_database.csv`). |
 | `data/news/raw/*.txt` | Chinese news captures (URL line optional; used by `--extract-news`). |
 
-Outputs: **`AI Analyst/outputs/`** — charts, `momentum_score.json`, `chart_manifest.json`, and `export_deal_database_updated.csv` after news extraction.
+Outputs: **`AI Analyst/outputs/`** — charts, `momentum_score.json`, `chart_manifest.json`, and (after `--full` / `--extract-news`) **`api_extraction_raw_output.csv`** — curated rows plus NLP-extracted rows for appendix / human QC only.
+
+## Alignment with Excel (`UBS_Competition_Model_FINAL.xlsx`)
+
+- **Canada export order:** The deal CSV uses **RMB 200M/unit × 20 = RMB 4.0B** equipment value (Citi-style conservative case). **`est_value_usd_m`** is **RMB 4.0B ÷ 7.2 ≈ 555.56** so chart CNY bars match **~RMB 4B** under the same **7.2** display convention as the Python pipeline. This **must** match Sheet export / SOTP logic — **do not** use the **RMB 300M/unit** Dongwu tier for the Canada row.
+- **Kazakhstan / other rows** may reflect different disclosed tiers; document in the `notes` column if judges ask.
+- **Momentum score:** Use the number in **`momentum_score.json`** on Slide 18 after every `--charts-only` run. Aligning Canada to **RMB 4B** reduces implied deal value vs the old **USD 845M** row, so the composite may read **~66.5** (not **68.7**). Gauge may round to **67**. Purge any old **71** / stale references from deck or Excel AI tab.
+
+## Market share exhibit — default placement
+
+- **`market_share_shift.png`** = **appendix only** unless replaced with data-vetted series. Say so explicitly in live Q&A.
 
 ## Chart outputs (Master Bible alignment)
 
@@ -40,6 +50,7 @@ Outputs: **`AI Analyst/outputs/`** — charts, `momentum_score.json`, `chart_man
 - **Deal database** mixes **confirmed/disclosed** rows with **pipeline / exploratory** rows; judges should read **status** and **source** columns.
 - **`market_share_shift.png`** is an **illustrative scenario**, not an official market-share survey — do **not** cite it as Comtrade or OEM-reported statistics unless replaced.
 - **`--extract-news`** can **hallucinate** deal fields; **never** promote API rows to the model without verification.
+- **Duplicate extractions:** The raw NLP pipeline may emit **duplicate or overlapping rows** when several Chinese articles describe the **same** deal already in the curated database. **`momentum_score.json` and all charts default to the curated deal CSV only** (`data/deals/export_deal_database.csv`); the merged file **`api_extraction_raw_output.csv`** is the **unreviewed** machine output. A production workflow would **deduplicate and validate** extracted rows against that ground truth before any model integration — which is the intended human-in-the-loop step for this submission.
 - **Siemens Energy** transcripts are **not** in the automated NLP path (see below).
 
 ## Siemens Energy scope (explicit deprioritization)

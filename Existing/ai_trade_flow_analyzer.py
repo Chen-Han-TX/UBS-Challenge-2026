@@ -135,10 +135,10 @@ EXPORT_DEAL_DATABASE = [
         "units": 20,
         "mw_per_unit": 50,
         "total_mw": 1000,
-        "est_value_usd_m": 845,
+        "est_value_usd_m": 555.56,
         "status": "Confirmed",
-        "source": "Futunn/CSC Financial, March 2026",
-        "notes": "MILESTONE: First China-made gas turbine to North America"
+        "source": "Futunn/CSC Financial; Citi unit economics",
+        "notes": "RMB 4B @ 200M/unit x20; USD imputed @ 7.2 for charts — aligns Excel SOTP"
     },
     # PIPELINE DEALS (probability-weighted)
     {

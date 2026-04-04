@@ -2,7 +2,12 @@
 ======================================================================
 AI MODULE OUTPUT: CROSS-BORDER POWER EQUIPMENT TRADE FLOW ANALYSIS
 ======================================================================
-Generated: 2026-03-16 22:30
+NOTE: This file is a legacy snapshot from the prototype script. For the
+competition, use AI Analyst/outputs/momentum_score.json and charts from
+python ai_trade_flow_analyzer.py --charts-only (canonical pipeline).
+
+======================================================================
+Generated: 2026-03-16 22:30 (legacy)
 Module: Cross-Border Trade Flow Analyzer v1.0
 
 EXECUTIVE SUMMARY
@@ -12,13 +17,14 @@ EXECUTIVE SUMMARY
    Total deals tracked:          8
    Confirmed MW capacity:        1,490 MW
    Pipeline MW capacity:         1,700 MW
-   Total estimated value:        USD 2,450M
+   Total estimated value:        (see current CSV; Canada row aligned to RMB 4B)
    Dongfang Electric share:      84% of total value
 
 2. KEY FINDING: HOCKEY STICK INFLECTION
    Q1 2026 represents a structural break in Chinese gas turbine exports.
-   The 20-unit Canadian order (1,000 MW, ~USD 845M) is the largest single
-   Chinese gas turbine export deal to a developed market EVER.
+   The 20-unit Canadian order (1,000 MW, RMB 4.0B equipment @ Citi RMB 200M/unit,
+   ~USD 556M at 7.2) is the largest single Chinese gas turbine export deal to a
+   developed market in the team's disclosed database.
    
    Cumulative export MW trajectory:
    2026-Q1: 1,990 MW | 2026-Q2E: 2,290 MW | 2026-Q3E: 2,790 MW | 2026-Q4E: 3,190 MW
