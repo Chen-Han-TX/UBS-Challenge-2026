@@ -39,7 +39,7 @@ Always read **`AI Analyst/outputs/momentum_score.json`** after your last run —
 | **Composite** | **66.5 / 100** (“moderate momentum”) |
 | Deal flow | 49.7 |
 | Incumbent anxiety | 56.2 |
-| Order conversion | 62.5 |
+| Order conversion | 62.5 (5/8 — see **`order_conversion_included`** in JSON) |
 | Geographic diversification | 100.0 |
 | Technology validation | 100 |
 | **Deals in score** | **8** |
@@ -87,6 +87,9 @@ Always read **`AI Analyst/outputs/momentum_score.json`** after your last run —
 3. Confirm **`outputs/chart_manifest.json`** **`generated_at`** matches the chart freeze you intend.
 4. If you ran **`--full`**, include **`api_extraction_raw_output.csv`** only as **raw pipeline output**, not as the score basis.
 5. Purge deck references to **85.7**, **71**, stale **68.7** if they no longer match the JSON.
+6. **Excel:** The competition workbook (e.g. **`UBS_Competition_Model_FINAL.xlsx`**) is maintained **outside** this git repo — paste **`composite_score`** into the **AI Module / Sheet 16** (or equivalent) so the spreadsheet matches **`momentum_score.json`** (**66.5** with current inputs).
+
+**Order conversion (5/8 on canonical CSV):** Pakistan *In Progress*, Kazakhstan *Delivered*, Bangladesh *Contract Signed*, Uzbekistan *Contract Signed*, Canada *Confirmed*. Full list and rule string are in **`momentum_score.json`** (`order_conversion_included`, `order_conversion_rule`).
 
 ---
 
@@ -101,6 +104,7 @@ AI Analyst/
   outputs/momentum_score.json              # cite this after --charts-only
   outputs/chart_manifest.json
   outputs/charts/                          # Bible names + chart1–4
+  outputs/appendix/README.md               # note on raw vs canonical outputs
   outputs/api_extraction_raw_output.csv    # only after --full / --extract-news
   docs/AI_MODULE_METHODOLOGY.md
   docs/QA_AI_MODULE.md

@@ -14,7 +14,35 @@
     "geographic_diversification": 0.15,
     "technology_validation": 0.1
   },
-  "computed_at": "2026-04-04T17:01:26.915703",
+  "computed_at": "2026-04-04T17:06:21.707946",
   "deal_count": 8,
-  "transcript_quarters": 8
+  "transcript_quarters": 8,
+  "order_conversion_rule": "Counts deals whose status matches whole words: Delivered, Confirmed, In Progress, or Contract Signed (regex word boundaries; e.g. Unconfirmed excluded).",
+  "order_conversion_included": [
+    {
+      "deal_id": "DB_001_2024-Q3",
+      "status": "In Progress",
+      "buyer_country": "Pakistan"
+    },
+    {
+      "deal_id": "DB_002_2025-Q1",
+      "status": "Delivered",
+      "buyer_country": "Kazakhstan"
+    },
+    {
+      "deal_id": "DB_003_2025-Q3",
+      "status": "Contract Signed",
+      "buyer_country": "Bangladesh"
+    },
+    {
+      "deal_id": "DB_004_2025-Q4",
+      "status": "Contract Signed",
+      "buyer_country": "Uzbekistan"
+    },
+    {
+      "deal_id": "DB_005_2026-Q1",
+      "status": "Confirmed",
+      "buyer_country": "Canada"
+    }
+  ]
 }

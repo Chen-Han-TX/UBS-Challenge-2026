@@ -77,6 +77,17 @@ SCORE_WEIGHTS = {
     "technology_validation": 0.10,
 }
 
+# Order conversion sub-score: word-boundary match so "Unconfirmed" is not counted as "confirmed".
+_ORDER_CONVERSION_STATUS_RE = re.compile(
+    r"\b(?:delivered|confirmed|in\s+progress|contract\s+signed)\b",
+    re.IGNORECASE,
+)
+
+
+def _status_counts_toward_order_conversion(status: str) -> bool:
+    return bool(_ORDER_CONVERSION_STATUS_RE.search(str(status or "")))
+
+
 # Illustrative global market-share stacks (2020–2027E) for appendix / Slide 7.
 # NOT customs-derived — see methodology doc. Replace if team obtains licensed market data.
 MARKET_SHARE_ILLUSTRATIVE = {
@@ -542,23 +553,24 @@ def compute_momentum_score(deals: list[dict], transcript_data: list[dict]) -> di
 
     # ---- Sub-component 3: Order Conversion (20%) ----
     total_deals = len(deals) if deals else 1
-    confirmed_or_delivered = sum(
-        1
-        for d in deals
-        if any(
-            s in str(d.get("status", "")).lower()
-            for s in [
-                "delivered",
-                "confirmed",
-                "in progress",
-                "contract signed",
-            ]
-        )
-    )
+    order_conv_rows: list[dict] = []
+    for d in deals:
+        st = str(d.get("status", ""))
+        if _status_counts_toward_order_conversion(st):
+            order_conv_rows.append(
+                {
+                    "deal_id": str(d.get("deal_id", "")).strip(),
+                    "status": st.strip(),
+                    "buyer_country": str(d.get("buyer_country", "")).strip(),
+                }
+            )
+    confirmed_or_delivered = len(order_conv_rows)
     conversion_rate = confirmed_or_delivered / total_deals
     conversion_score = conversion_rate * 100
-    print(f"  3. Order Conversion: {conversion_score:.1f}/100 "
-          f"({confirmed_or_delivered}/{total_deals} confirmed+delivered)")
+    print(
+        f"  3. Order Conversion: {conversion_score:.1f}/100 "
+        f"({confirmed_or_delivered}/{total_deals} delivered / confirmed / in-progress / contract-signed)"
+    )
 
     # ---- Sub-component 4: Geographic Diversification (15%) ----
     countries = set()
@@ -576,10 +588,8 @@ def compute_momentum_score(deals: list[dict], transcript_data: list[dict]) -> di
     has_operational = any(
         "delivered" in str(d.get("status", "")).lower() for d in deals
     )
-    has_developed_market = any(
-        d.get("buyer_country", "") in ["Canada", "USA", "Australia", "Japan", "Germany", "UK"]
-        for d in deals
-    )
+    _developed = {"Canada", "USA", "United States", "Australia", "Japan", "Germany", "UK"}
+    has_developed_market = any(str(d.get("buyer_country", "")).strip() in _developed for d in deals)
     tech_score = 0
     if has_operational:
         tech_score += 50
@@ -616,6 +626,11 @@ def compute_momentum_score(deals: list[dict], transcript_data: list[dict]) -> di
         "computed_at": datetime.now().isoformat(),
         "deal_count": len(deals),
         "transcript_quarters": len(transcript_data),
+        "order_conversion_rule": (
+            "Counts deals whose status matches whole words: Delivered, Confirmed, "
+            "In Progress, or Contract Signed (regex word boundaries; e.g. Unconfirmed excluded)."
+        ),
+        "order_conversion_included": order_conv_rows,
     }
 
     print(f"\n  ★ CHINA EXPORT MOMENTUM SCORE: {composite:.1f} / 100")
